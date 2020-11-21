@@ -50,7 +50,7 @@
       if(request.status == 200) {
         var templateText = document.getElementById('tableTemplate').innerHTML;
         var compiledTemplateText = Handlebars.compile(templateText);
-        compiledHTML = compiledTemplateText({rows: student_items});
+        compiledHTML = compiledTemplateText({rows: student_items})
         document.getElementById('studentTable').innerHTML = compiledHTML;  
       }
       else {
